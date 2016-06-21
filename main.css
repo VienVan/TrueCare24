@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('background-img.jpg');
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('assets/background-img.jpg');
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -29,7 +29,6 @@ body {
 .input-field {
   margin-bottom: -1rem;
 }
-
 .intro {
   margin: 12em;
 }
@@ -40,21 +39,13 @@ body {
 }
 /* form styles */
 #terms-label {
-  text-align: center;
   font-size: 1em !important;
 }
 #btn-submit {
   width: 75%;
   display: block;
-  margin: auto;
+  margin: 2rem auto 0 auto;
   background: #00afef;
-}
-
-/* logo */
-
-#truecare-logo {
-  display: block;
-  margin: auto;
 }
 
 #btn-facebook {
@@ -63,38 +54,48 @@ body {
   width: 75%;
   background: #3b5998;
 }
-/* oauth divider */
 
-p.separator {
-  padding: .5em 0;
-  margin: .5em 0;
-  text-align: center;
-  font-style: italic;
-}
-p.separator span {
-  font-size: 1.2em;
-  background-color: #fff;
-  padding: .5em 1em 0em 1em;
-  position: relative;
-  z-index: 1;
-  color: rgba(0, 0, 0, .5);
-}
-p.separator:after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #e6e6e6;
-    position: absolute;
-    top: 50%;
-    left: 0;
+
+/* logo */
+#truecare-logo {
+  display: block;
+  margin: auto;
 }
 
-h2 {
+h1 {
   font-family: Ubuntu;
   font-weight: bold;
 }
 
-h3 {
+h2 {
   font-family; Ubuntu;
   font-weight: 300;
+}
+
+
+/* media queries */
+@media (max-width: 800px) {
+  .submit-form {
+    padding: 1.5em;
+    margin: 2em auto;
+  }
+  #terms-label {
+    font-size: .75em !important;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  .intro {
+    margin: 6em 2em;
+  }
+}
+
+@media (max-width: 799px) {
+  .intro {
+    display: none;
+  }
 }
