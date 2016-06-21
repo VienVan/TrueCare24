@@ -1,0 +1,22 @@
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label {
+  color: #00afef;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=password]:focus, .input-field input[type=email]:focus {
+  border-bottom: 1px solid #00afef;
+  box-shadow: 0 1px 0 0 #00afef;
+}
+
+/* checkbox color */
+.input-field input[type=checkbox]:checked + label:before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #00afef;
+  border-bottom: 2px solid #00afef;
+}
+
+/* form styles */
+.terms {
+  text-align: center;
+}
