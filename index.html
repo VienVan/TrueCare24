@@ -11,62 +11,77 @@
     <!-- Google Icons -->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
     <!-- Compiled and minified JavaScript -->
     <link rel="stylesheet" href="main.css">
 
   </head>
   <body>
-    <div class='container-fluid signup-form card'>
+    <div class='row'>
+      <div class='col m7 s-hidden'>
+        <h3>Let's Get Started!</h3>
+      </div>
+      <div class='col m5 s12'>
+        <div class='row card submit-form container'>
+          <div class='logo-container'>
+              <img src="truecare-logo.png" alt="TrueCare24" width="80%" id="truecare-logo">
+          </div>
+        <hr>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" autofocus>
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="promo-code" type="text" class="validate">
+                <label for="promo-code">Promo Code (optional)</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#">Privacy Policy</a> and <br>the <a href="#">Terms and Conditions</a></label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="btn-submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
 
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="promo-code" type="text" class="validate">
-            <label for="promo-code">Promo Code (optional)</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 terms">
-            <input type="checkbox" id="terms" />
-            <label for="terms">I agree to the Privacy Policy and the Terms and Conditions</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-            </button>
-          </div>
-        </div>
-      </form>
+      </div>
+      </div>
+
     </div>
-  </div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
