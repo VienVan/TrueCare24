@@ -1,4 +1,4 @@
-[TrueCare24 Sign Up Page](https://www.bitballoon.com/sites/radiologist-kangaroo-25411)
+[TrueCare24 Sign Up Page](http://radiologist-kangaroo-25411.bitballoon.com/)
 
 *Original
 ![Original](/assets/original-signup.png)
