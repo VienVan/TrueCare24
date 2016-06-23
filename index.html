@@ -27,6 +27,9 @@
           <h1>Welcome!</h1>
           <h2>Let's Get Started.</h2>
           <a href="#">Questions? Chat With Us.</a>
+          <hr>
+          <h6>Already have an account? <a href="#">Log In</a></h6>
+
         </div>
       </div>
       <div class='col l5 s12'>
@@ -39,23 +42,23 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate" autofocus>
+                <input id="first_name" type="text" class="validate" autofocus required>
                 <label for="first_name">First Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
+                <input id="last_name" type="text" class="validate" required>
                 <label for="last_name">Last Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
+                <input id="email" type="email" class="validate" required>
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
+                <input id="password" type="password" class="validate" pattern=".{8,}" required title="8 chars minimum">
                 <label for="password">Password</label>
               </div>
             </div>
@@ -67,7 +70,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12 terms">
-                <input type="checkbox" id="terms">
+                <input id="terms" type="checkbox" class="validate" required>
                 <label for="terms" id='terms-label'>I agree to the <a href="#">Privacy Policy</a> and the <a href="#">Terms and Conditions</a></label>
               </div>
             </div>
